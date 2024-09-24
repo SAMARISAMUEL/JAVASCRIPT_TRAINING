@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="practi.css" />
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p>Select a new car from the list.</p>
+    <select name="select" id="select" onmouseover="myFunction()">
+      <option value="audi">AUDI</option>
+      <option value="nissan">NISSAN</option>
+      <option value="volvo">VOLVO</option>
+    </select>
+
+    <script>
+      function myFunction() {
+        let x = document.getElementById("select").value;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>

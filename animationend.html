@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="animationend.css" />
+  </head>
+  <body>
+    <div id="start" onclick="myFunction()">
+      <p>Click me to start animation</p>
+    </div>
+    <script>
+      const btn = document.getElementById("start");
+      function myFunction() {
+        btn.style.animation = "mymove 4s 2";
+      }
+      btn.addEventListener("animationstart", myStartFunction);
+      btn.addEventListener("animationiteration", myRepeatFunction);
+      btn.addEventListener("animationend", myEndFunction);
+
+      function myStartFunction() {
+        this.innerHTML = "The animation has started";
+        this.style.backgroundColor = "pink";
+      }
+      function myRepeatFunction() {
+        this.innerHTML = "The animation was played again";
+        this.style.backgroundColor = "lightblue";
+      }
+      function myEndFunction() {
+        this.innerHTML = "The animation has completed";
+        this.style.backgroundColor = "lightgray";
+      }
+    </script>
+  </body>
+</html>

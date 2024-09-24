@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="onContextmenu.css" />
+  </head>
+  <body>
+    <h1>HTML DOM Events</h1>
+    <h3>The contextmenu Event</h3>
+    <div class="top">
+      <p>Right-click in this box!</p>
+      <p>Context menu will show.</p>
+    </div>
+    <div class="bottom" id="bottom">
+      <p>Right-click in this box!</p>
+      <p>Context menu is disabled.</p>
+    </div>
+    <script>
+      const x = document.getElementById("bottom");
+      x.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+      });
+      window.addEventListener("afterprint", function myfunction() {
+        alert("this is printing");
+      });
+    </script>
+  </body>
+</html>

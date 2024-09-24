@@ -1,0 +1,7 @@
+select {
+  width: 30%;
+  text-decoration: none;
+  cursor: pointer;
+
+  z-index: 1;
+}

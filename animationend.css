@@ -1,0 +1,12 @@
+#start {
+  border: 1px solid black;
+  background-color: yellow;
+}
+@keyframes mymove {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+  }
+}
