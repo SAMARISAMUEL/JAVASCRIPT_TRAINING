@@ -1,0 +1,24 @@
+.myimg,
+img {
+  width: 28%;
+  height: auto;
+  margin-left: 500px;
+  z-index: 20;
+}
+#im2 {
+  width: 28%;
+  height: auto;
+  margin-left: 500px;
+  position: relative;
+  bottom: 500px;
+  z-index: 30;
+}
+#im3 {
+  width: 28%;
+  height: auto;
+  position: relative;
+  bottom: 1000px;
+}
+.im2 {
+  display: none;
+}
