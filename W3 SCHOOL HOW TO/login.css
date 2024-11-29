@@ -1,0 +1,18 @@
+img {
+  width: 5%;
+  height: auto;
+}
+.container {
+  display: none;
+}
+@keyframes slide {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+#icon:hover {
+  color: red;
+}
